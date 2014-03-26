@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+		<title>Technical Compatibility Test</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<script type="text/javascript" charset="UTF-8" src="js/form.js"></script>
+	</head>
+	<body> 
+		<form id="test_form" method="get" action="">
+			<fieldset id="personal_info">
+				<p>
+					<label for="first_name">First name</label>
+					<input id="first_name" type="text" autofocus name="first_name" required>
+				</p>
+				<p>
+					<label for="surname">Surname</label>
+					<input id="surname" type="text" name="surname" required>
+				</p>
+				<p>
+					<label for="email">Email address</label>
+					<input id="email" type="email" name="email" required>
+				</p>
+				<p>
+					<label for="daytime_number">Daytime contact number</label>
+					<input id="daytime_number" type="tel" name="daytime_number" required>
+				</p>
+			</fieldset>
+			
+			<fieldset id="address">
+				<p>
+					<label for="street_address">Address</label>
+					<input id="street_address" type="text" name="street_address" required>
+				</p>
+				<p>
+					<label for="suburb">Suburb</label>
+					<input id="suburb" type="text" name="suburb" required>
+				</p>
+				<p>
+					<label for="states">State</label>
+					<input id="states" type="text" name="states" list="states_list" placeholder='-- Select --' required>
+					<datalist id="states_list">
+						<option label="ACT" value="ACT">
+						<option label="NSW" value="NSW">
+						<option label="NT" value="NT">
+						<option label="QLD" value="QLD">
+						<option label="SA" value="SA">
+						<option label="TAS" value="TAS">
+						<option label="VIC" value="VIC">
+						<option label="WA" value="WA">
+					</datalist>
+				</p>
+				<p>
+					<label for="postcode">Postcode</label>
+					<input id="postcode" type="number" name="postcode" required>
+				</p>
+			</fieldset>
+						
+			<fieldset id="enquiry">
+				<p>
+					<label for="enquiry_type">Enquiry Type</label>
+					<input id="enquiry_type" type="text" name="enquiry_type" list="enquiry_types_list" placeholder='-- Select --' oninput="onEnquiryTypeChange(event)" required>
+					<datalist id="enquiry_types_list">
+						<option label="General enquiry" value="General enquiry">
+						<option label="Product feedback or enquiry" value="Product feedback or enquiry">
+						<option label="Product complaint" value="Product complaint">
+					</datalist>
+				</p>
+				<section id="enquiry_details" class="hidden">
+					<p>
+						<label for="product_name">Product Name</label>
+						<input id="product_name" type="text" name="product_name">
+					</p>
+					<p>
+						<label for="product_size">Product Size</label>
+						<input id="product_size" type="text" name="product_size">
+					</p>
+					<p>
+						<label for="use_by_date">Use-by Date</label>
+						<input id="use_by_date" type="text" name="use_by_date">
+					</p>
+					<p>
+						<label for="batch_code">Batch code</label>
+						<input id="batch_code" type="text" name="batch_code">
+					</p>
+				</section>
+					
+				<p>
+					<label for="enquiry_text">Enquiry</label>
+					<textarea id="enquiry_text" name="enquiry_text" rows="5">&nbsp;</textarea>
+				</p>
+				<p>
+					<label for="submit_btn">&nbsp;</label><!-- added to keep the layout aligned -->
+					<input id="submit_btn" type="submit" value="Submit >">
+				</p>
+			</fieldset>
+		</form>
+	</body>
+</html>

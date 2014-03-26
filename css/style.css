@@ -1,0 +1,80 @@
+body{
+	font-family: helvetica,sans-serif;
+	font-size: 12px;
+}
+
+form{
+	background-color: #eee;
+	margin: 0 auto;
+	padding: 20px 0 0 0;
+	max-width: 520px;
+}
+
+form fieldset{
+	border: none;
+	margin-bottom: 2em;
+	padding: 0 0 0.5em 0;
+}
+
+form fieldset:last-child{
+	margin-bottom: 0;
+}
+
+form fieldset p{
+	margin: 0 0 0.5em 0;
+}
+
+form fieldset p label{
+	display: inline-block;
+	line-height: 30px;
+	padding-right: 20px;
+	text-align: right;
+	vertical-align: top;
+	width: 170px;
+}
+
+form fieldset p input,
+form fieldset p select{
+	height: 30px;
+}
+
+form fieldset p input,
+form fieldset p textarea,
+form fieldset p select{
+	border: none;
+	display: inline-block;
+	line-height: 30px;
+	padding: 0 5px;
+	text-align: left;
+	width: 300px;
+}
+
+form fieldset p select{
+	width: 310px;
+}
+
+#submit_btn{
+	color: #fff;
+	background-color: #45A;
+	border-color: #45A;
+	border-radius: 5px;
+	height: 30px;
+	margin-left: 210px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100px;
+}
+
+.hidden{
+	display:none;
+}
+
+#required_tooltip{
+	position: fixed;
+	background-color: #fff;
+	padding: 15px;
+	border: 1px solid red;
+	font-size: 14px;
+}
+
+
